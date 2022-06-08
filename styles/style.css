@@ -1,0 +1,244 @@
+body {
+    margin: 0;
+    background-color: wheat;
+}
+
+
+/**cabecera**/
+
+header {
+    background-color: peru;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+}
+
+.logo {
+    flex-basis: 10%;
+}
+
+.logo img {
+    width: 100%;
+}
+
+header h3 {
+    margin-left: 5%;
+    font-size: 50px;
+    flex-basis: 50%;
+}
+
+.enlaces {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 30%;
+    font-size: 25px;
+    justify-content: right;
+}
+
+.enlaces a {
+    margin: 5%;
+    text-decoration: none;
+    color: black;
+}
+
+#input-search {
+    padding: 0;
+    margin: 5%;
+    margin-top: 2%;
+    border: 2px solid black;
+    background-color: wheat;
+    font-size: 20px;
+}
+
+
+/**index**/
+
+.contenedor {
+    margin-top: 13%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carrusel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide {
+    width: 80%;
+    height: 700px;
+    position: relative;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+}
+
+.slide-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 700px;
+}
+
+.slide-open:checked+.slide-item {
+    position: static;
+    opacity: 100;
+}
+
+.slide-item {
+    position: absolute;
+    opacity: 0;
+}
+
+.slide-item img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.slide-control {
+    background: BurlyWood;
+    border-radius: 50%;
+    color: black;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+
+.slide-control.prev {
+    left: 2%;
+}
+
+.slide-control.next {
+    right: 2%;
+}
+
+#slide-1:checked~.control-1,
+#slide-2:checked~.control-2,
+#slide-3:checked~.control-3 {
+    display: block;
+}
+
+.slide-indicador {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.slide-indicador li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.slide-circulo {
+    display: block;
+    font-size: 35px;
+}
+
+#slide-1:checked~.control-1~.slide-indicador li:nth-child(1) .slide-circulo,
+#slide-2:checked~.control-2~.slide-indicador li:nth-child(2) .slide-circulo,
+#slide-3:checked~.control-3~.slide-indicador li:nth-child(3) .slide-circulo {
+    color: BurlyWood;
+}
+
+/**noticias**/ 
+.noticias {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 80%;
+    background-color: wheat;
+}
+
+.noticia_destacada {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: BurlyWood;
+    margin-bottom: 5%;
+}
+
+.noticia_destacada h3 {
+    margin-top: 2%;
+    width: 80%;
+    text-align: right;
+}
+
+.noticia_destacada h1 {
+    background-color: wheat;
+    padding: 1%;
+}
+
+.noticia_destacada img {
+    width: 50%;
+}
+
+#texto {
+    display: flex;
+    justify-content: center;
+    flex-basis: 30%;
+    font-size: 30px;
+    align-items: center;
+    text-align: center;
+    margin: 2%;
+    margin-top: 3%;
+    width: 80%;
+}
+
+.url {
+    width: 80%;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+nav li {
+    list-style: none;
+    background-color: wheat;
+    padding: 1%;
+    margin-bottom: 1%;
+}
+
+/****/
+
+footer {
+    margin-top: 2%;
+    background-color: peru;
+    height: 108px;
+    font-size: 20px;
+    padding: 1%;
+    text-align: center;
+}

@@ -1,0 +1,8 @@
+<configuracion>
+    <usuario>
+        <correo>conexion</correo>
+        <password>1234</password>
+        <rol>admin</rol>
+    </usuario>
+    
+</configuracion>

@@ -1,0 +1,9 @@
+--explicacion de lo que hice el proyecto
+--luego explicar que tengo en el index
+hacer search de noticias - poner 3 como mucho + footer
+hacer captura de la base de datos (esquema)
+si el dia está ocupado que no me deje reservar
+--luego registrar usuario padre y explicar lo que hacen 
+--luego iniciar sesion con usuario profesor y explicar lo que hace
+--luego iniciar sesion con usuario administrador y explicar lo que hace
+""hacer subir imagen para cambiar foto perfil""

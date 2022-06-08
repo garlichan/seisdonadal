@@ -1,0 +1,347 @@
+body {
+    background-color: wheat;
+    margin: 0;
+}
+
+
+/**cabecera**/
+
+header {
+    background-color: peru;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.logo {
+    flex-basis: 10%;
+}
+
+.logo img {
+    width: 100%;
+}
+
+header h3 {
+    margin-left: 5%;
+    font-size: 50px;
+    flex-basis: 50%;
+}
+
+.enlaces {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 30%;
+    font-size: 25px;
+    justify-content: right;
+}
+
+.enlaces a {
+    margin: 5%;
+    text-decoration: none;
+    color: black;
+}
+
+
+/**contenedor reservar aulas**/
+
+.contenedor_reservar_aula {
+    margin-top: 7%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.informacion_aula {
+    margin-left: 3%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex-basis: 40%;
+    align-items: center;
+    justify-content: center;
+    background-color: peru;
+    padding: 1%;
+    border: 1px solid black;
+}
+
+#texto {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    flex-basis: 30%;
+    font-size: 30px;
+    align-items: center;
+    text-align: center;
+}
+
+.informacion_reserva {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+    margin: 1%;
+    margin-right: 3%;
+}
+
+
+/**calendario**/
+
+.contenedor_calendario {
+    flex-basis: 60%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.real_calendar {
+    display: flex;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendar {
+    width: 23rem;
+    height: 19rem;
+    background-color: wheat;
+    border: solid 1px black;
+}
+
+.month {
+    height: 4rem;
+    background-color: Peru;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+    border-bottom: solid black 1px;
+}
+
+.month i {
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 10%;
+}
+
+.month h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.weekdays {
+    height: 2.5rem;
+    padding: 0 0.4rem;
+    display: flex;
+    align-items: center;
+}
+
+.weekdays div {
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    width: calc(22rem / 7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.days {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.2rem;
+}
+
+.days div {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    width: calc(22rem / 7);
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.days div:hover:not(.today) {
+    background-color: Peru;
+    color: black;
+    text-shadow: none;
+}
+
+.clickday{
+    background-color: Peru;
+    color: black;
+    text-shadow: none;
+}
+
+.prev-date,
+.next-date {
+    opacity: 0.75;
+}
+
+.today {
+    background-color: tan;
+    border: 0.1rem solid black;
+}
+
+.horario {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 60%;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.horario h2 {
+    margin: 0;
+    border-bottom: 1px solid black;
+    background-color: Peru;
+}
+
+.horario p {
+    margin: 0;
+}
+
+.primeras_horas {
+    margin-top: 3%;
+}
+
+.ultimas_horas {
+    margin-top: 2%;
+}
+
+form {
+    margin-top: 4%;
+    flex-basis: 20%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 30%;
+}
+
+#boton_reservar_aula {
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    width: 50%;
+    font-size: 20px;
+    background-color: Peru;
+    border-top: solid 1px black;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+#boton_reservar_aula:hover {
+    background-color: rgb(202, 143, 85);
+}
+
+.carrusel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide {
+    width: 80%;
+    height: 300px;
+    position: relative;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+}
+
+.slide-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+}
+
+.slide-open:checked+.slide-item {
+    position: static;
+    opacity: 100;
+}
+
+.slide-item {
+    position: absolute;
+    opacity: 0;
+}
+
+.slide-item img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.slide-control {
+    background: wheat;
+    border-radius: 50%;
+    color: black;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+
+.slide-control.prev {
+    left: 2%;
+}
+
+.slide-control.next {
+    right: 2%;
+}
+
+#slide-1:checked~.control-1,
+#slide-2:checked~.control-2,
+#slide-3:checked~.control-3 {
+    display: block;
+}
+
+.slide-indicador {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.slide-indicador li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.slide-circulo {
+    display: block;
+    font-size: 35px;
+}
+
+#slide-1:checked~.control-1~.slide-indicador li:nth-child(1) .slide-circulo,
+#slide-2:checked~.control-2~.slide-indicador li:nth-child(2) .slide-circulo,
+#slide-3:checked~.control-3~.slide-indicador li:nth-child(3) .slide-circulo {
+    color: wheat;
+}

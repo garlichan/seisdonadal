@@ -1,0 +1,98 @@
+body {
+    background-color: wheat;
+    margin: 0;
+}
+
+/**cabecera**/
+header {
+    background-color: peru;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    align-items: center;
+
+}
+
+.logo {
+    flex-basis: 10%;
+}
+.logo img{
+    width: 100%;
+}
+header h3 {
+    margin-left: 5%;
+    font-size: 50px;
+    flex-basis: 50%;
+}
+
+.enlaces {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 30%;
+    font-size: 25px;
+    justify-content: right;
+}
+
+.enlaces a {
+    margin: 5%;
+    text-decoration: none;
+    color: black;
+}
+/**titulo**/
+h1{
+    text-align: center;
+    margin: 0;
+    margin-top: 2%;
+    font-size: 30px;
+}
+/**contenedor aulas**/
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+}
+
+
+/**botones**/
+
+input {
+    margin: 10%;
+    width: 350px;
+    height: 250px;
+    background-size: cover;
+}
+
+#musica {
+    background-image: url("/imagenes/aulas/musica.jpg");
+}
+
+#informatica {
+    background-image: url("/imagenes/aulas/informatica.jpg");
+}
+
+#biblioteca {
+    background-image: url("/imagenes/aulas/biblioteca.jpg");
+}
+
+#bibliolab {
+    background-image: url("/imagenes/aulas/bibliolab.jpg");
+}
+
+#multisensorial {
+    background-image: url("/imagenes/aulas/multisensorial.jpg");
+}
+
+#rosalia {
+    background-image: url("/imagenes/aulas/rosalia.jpg");
+}
+
+#gimnasio {
+    background-image: url("/imagenes/aulas/gimnasio.jpg");
+}
+
+#patio_columnas {
+    background-image: url("/imagenes/aulas/patio_columnas.jpg");
+}

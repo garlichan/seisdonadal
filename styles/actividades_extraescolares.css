@@ -1,0 +1,93 @@
+body{
+    background-color: wheat;
+    margin: 0;
+}
+/**cabecera**/
+header {
+    background-color: peru;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    align-items: center;
+
+}
+
+.logo {
+    flex-basis: 10%;
+}
+.logo img{
+    width: 100%;
+}
+header h3 {
+    margin-left: 5%;
+    font-size: 50px;
+    flex-basis: 50%;
+}
+
+.enlaces {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 30%;
+    font-size: 25px;
+    justify-content: right;
+}
+
+.enlaces a {
+    margin: 5%;
+    text-decoration: none;
+    color: black;
+}
+/**titulo**/
+h1{
+    text-align: center;
+    margin: 0;
+    margin-top: 2%;
+    font-size: 30px;
+}
+/**contenedor**/
+form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/**botones**/
+input{
+    margin: 0.5%;
+    margin-top: 3%;
+    width: 350px;
+    height: 250px;
+    background-size: cover;
+}
+#ballet{
+    background-image: url("/imagenes/actividades/ballet.jpg");
+}
+#gimnasia_ritmica{
+    background-image: url("/imagenes/actividades/gimnasia_ritmica.jpg");
+}
+#baile_moderno{
+    background-image: url("/imagenes/actividades/baile_moderno.jpg");
+}
+#baloncesto{
+    background-image: url("/imagenes/actividades/baloncesto.jpg");
+}
+#balonmano{
+    background-image: url("/imagenes/actividades/balonmano.jpg");
+}
+#kung_fu{
+    background-image: url("/imagenes/actividades/kungfu.jpg");
+}
+#teatro{
+    background-image: url("/imagenes/actividades/teatro.jpg");
+}
+#pintura_creativa{
+    background-image: url("/imagenes/actividades/pintura_creativa.jpg");
+}
+#comic{
+    background-image: url("/imagenes/actividades/comic.jpg");
+}
+#ingles{
+    background-image: url("/imagenes/actividades/ingles.jpg");
+}

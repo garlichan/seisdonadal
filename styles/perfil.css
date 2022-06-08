@@ -1,0 +1,181 @@
+body {
+    background-color: wheat;
+    margin: 0;
+}
+
+/**cabecera**/
+
+header {
+    background-color: peru;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.logo {
+    flex-basis: 10%;
+}
+
+.logo img {
+    width: 100%;
+}
+
+header h3 {
+    margin-left: 5%;
+    font-size: 50px;
+    flex-basis: 50%;
+}
+
+.enlaces {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 30%;
+    font-size: 25px;
+    justify-content: right;
+}
+
+.enlaces a {
+    margin: 5%;
+    text-decoration: none;
+    color: black;
+}
+
+/**perfil**/
+
+.container{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.perfil{
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 20%;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    border: 4px solid black;
+    background-color: peru;
+    height: 600px;
+    
+}
+.perfil #icono{
+    width: 40%;
+    border: 2px solid black;
+}
+
+.carpeta_usuario a{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: flex-end;
+}
+#carpeta{
+    width: 16%;
+    background-color: wheat;
+    border: 2px solid black;
+    
+}
+
+#carpeta:hover{
+    background-color: BurlyWood;
+    cursor: pointer;
+}
+
+.info_usuario p{
+    height: 40px;
+    font-size: 20px;
+    margin: 0;
+}
+#ultima_modificacion{
+    margin-top: 2%;
+    font-size: 20px;
+}
+
+#input_datos{
+border: 1px solid black;
+background-color: wheat;
+height: 20px;
+}
+
+
+
+#botones input {
+    margin-top: 5%;
+    font-size: 20px;
+    background-color: wheat;
+    border: 2px solid black;
+    border-radius: 50px;
+} 
+/**reservas usuario**/
+.reservas{
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 60%;
+    padding: 1%;
+    border: 1px solid black;
+    background-color: peru;
+    height: 100%;
+}
+
+.reservas p{
+    font-size: 30px;
+}
+.reservas h1{
+    margin-left: 5%;
+}
+
+.info_reservas{
+    border: 1px solid black;
+    flex-basis: 80%;
+}
+table{
+    width: 100%;
+}
+tbody{
+    width: 100%;
+}
+.tabla_reservas tr{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    font-size: 30px;
+    justify-content: space-around;
+}
+.tabla_reservas td{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    font-size: 20px;
+    justify-content: space-around;
+}
+
+#boton_aceptar_actividad{
+    background-color: green;
+    color: white;
+    border: 1px solid white;
+}
+#boton_borrar_actividad{
+    background-color: red;
+    color: white;
+    border: 1px solid white;
+
+}
+#boton_aceptar_aula{
+    background-color: green;
+    color: white;
+    border: 1px solid white;
+}
+#boton_borrar_aula{
+    background-color: red;
+    color: white;
+    border: 1px solid white;
+    
+}
