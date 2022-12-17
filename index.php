@@ -1,6 +1,12 @@
 <?php
 include 'database.php';
 session_start();
+
+if (isset($_POST['cerrar_sesion'])) {
+    session_unset();
+    session_destroy();
+    header('location: ../index.php');
+}
 ?>
 <!DOCTYPE html>
 <!--
@@ -144,8 +150,13 @@ and open the template in the editor.
             </div>
         </div>
     </div>
-    <footer>© CEIP Plurilingüe Seis do Nadal 2022 |</footer>
+    <footer><p>© CEIP Plurilingüe Seis do Nadal 2022 |</p>
+    <form method="post" action="">
+    <input type="submit" name="cerrar_sesion" id="cerrar_sesion" value="Cerrar sesión">
+    </form>    
+</footer>
     <?php
+
     ?>
 </body>
 

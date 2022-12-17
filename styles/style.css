@@ -242,3 +242,9 @@ footer {
     padding: 1%;
     text-align: center;
 }
+#cerrar_sesion {
+    font-size: 20px;
+    background-color: wheat;
+    border: 2px solid black;
+    border-radius: 50px;
+} 
