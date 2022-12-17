@@ -83,7 +83,7 @@ and open the template in the editor.
         <form action="" method="POST">
             <input type="hidden" name="id_usuario" value="<?php echo $_SESSION['id_usuario'] ?>">
             <input type="hidden" name="id_actividad" value="3">
-            <input type="submit" id="boton_reservar_actividad" name="boton_reservar_actividad" value="Apuntarme!">
+            <input type="submit" id="boton_reservar_actividad" name="boton_reservar_actividad" value="¡Apuntarme!">
         </form>
     </div>
     <?php
