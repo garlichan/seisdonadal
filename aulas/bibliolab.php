@@ -125,7 +125,7 @@ and open the template in the editor.
                     </ol>
                 </div>
             </div>
-            <div id="texto">Non lacinia mauris viverra lacinia. Sed risus felis, dignissim nec sem non, varius cursus mi. Curabitur vitae convallis massa. Suspendisse ac laoreet justo. Nam non pulvinar lorem.</div>
+            <div id="texto">Aula biblioteca laboratorio para que los niños trabajen con materiales de ciencias</div>
         </div>
 
         <div class="informacion_reserva">
