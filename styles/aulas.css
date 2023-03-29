@@ -66,33 +66,33 @@ input {
 }
 
 #musica {
-    background-image: url("/imagenes/aulas/musica.jpg");
+    background-image: url("../imagenes/aulas/musica.jpg");
 }
 
 #informatica {
-    background-image: url("/imagenes/aulas/informatica.jpg");
+    background-image: url("../imagenes/aulas/informatica.jpg");
 }
 
 #biblioteca {
-    background-image: url("/imagenes/aulas/biblioteca.jpg");
+    background-image: url("../imagenes/aulas/biblioteca.jpg");
 }
 
 #bibliolab {
-    background-image: url("/imagenes/aulas/bibliolab.jpg");
+    background-image: url("../imagenes/aulas/bibliolab.jpg");
 }
 
 #multisensorial {
-    background-image: url("/imagenes/aulas/multisensorial.jpg");
+    background-image: url("../imagenes/aulas/multisensorial.jpg");
 }
 
 #rosalia {
-    background-image: url("/imagenes/aulas/rosalia.jpg");
+    background-image: url("../imagenes/aulas/rosalia.jpg");
 }
 
 #gimnasio {
-    background-image: url("/imagenes/aulas/gimnasio.jpg");
+    background-image: url("../imagenes/aulas/gimnasio.jpg");
 }
 
 #patio_columnas {
-    background-image: url("/imagenes/aulas/patio_columnas.jpg");
+    background-image: url("../imagenes/aulas/patio_columnas.jpg");
 }

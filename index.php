@@ -5,7 +5,7 @@ session_start();
 if (isset($_POST['cerrar_sesion'])) {
     session_unset();
     session_destroy();
-    header('location: ../index.php');
+    header('location: index.php');
 }
 ?>
 <!DOCTYPE html>
@@ -28,7 +28,7 @@ and open the template in the editor.
 <body>
     <header class="header">
         <div class="logo">
-            <a href="index.php"><img src="imagenes/logo/logo001.png" /></a>
+            <a href="./index.php"><img src="imagenes/logo/logo001.png" /></a>
         </div>
         <h3>CEIP Plurilingüe Seis do Nadal</h3>
         <nav class="enlaces">
@@ -56,7 +56,7 @@ and open the template in the editor.
                 }
             }
             if (isset($_SESSION['nombre'])) { ?>
-                <a href="/usuarios/perfil.php"><?php echo $_SESSION['nombre'] ?></a>
+                <a href="../usuarios/perfil.php"><?php echo $_SESSION['nombre'] ?></a>
             <?php
             } else {
             ?>

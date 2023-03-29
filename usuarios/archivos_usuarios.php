@@ -44,7 +44,7 @@ and open the template in the editor.
     <meta charset="UTF-8">
     <link rel="icon" href="../imagenes/logo/logo002.png">
     <title><?php echo $_SESSION['nombre'] ?></title>
-    <link href="/styles/archivos_usuarios.css" rel="stylesheet" type="text/css">
+    <link href="../styles/archivos_usuarios.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
 </head>
 

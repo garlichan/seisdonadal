@@ -1,0 +1,91 @@
+1
+cd /var /www
+ls -l
+cd /etc /apache2
+ls -l
+apache2.com-conf. + basica (parte que nos interesa directory)
+sudo service apache2 restart (para reiniciarlo)
+mods-available y mods-enabled importante
+mods-available son todos los mods que vienen instalados por defecto
+mods-enabled son los que tienes habilitados
+sites-available y sites-enabled
+sitios virtuales-son sitios de la red que no son reales (por defecto var/www/html)
+las directivas van con mayus
+redirección-redirect  /portal http://www.edu.xunta.gal
+sudo service restart
+2
+sudo apache2ctl -l
+cd ./mods_mods-avaliable
+ls -l
+cd..
+cd ./mods-enabled/
+ls -l
+a2 tabulador (dis deshabilitar y en añadir)
+sudo gedit userdir.conf 
+public_html crear carpeta
+index.html crear archivo en carpeta
+3
+sudo mkdir dwcc
+cd ./var/www/dwcc/ (aqui hay carpetas)
+sudo gedit dwcc.html
+cd /etc/apache2/sites_available (aqui hay configuraciones)
+sudo gedit dwcc.conf
+<VirtualHost *:80>
+	ServerName dwcc.daw.lan
+	ServerALias contornocliente.daw.lan
+	DocumentRoot
+	DirectoryIndex dwcc.html
+<VirtualHost>
+etc /bind y meter alias
+4
+cd /var/www/html
+sudo mkdir prueba1
+cd  ./prueba1
+cd /etc/apache2 
+ls -l
+sudo gedit apache2.conf
+(meter una directiva nueva)
+<Directory /var/www/html/prueba1/>
+Require ip 10.0.2.11
+<Directory>
+http
+5
+/etc/apache2
+ls mods-enabled
+sudo htpasswd -c /etc/apache2/usuarios_basic profesor1
+contraseña
+sudo htpasswd /etc/apache2/usuarios_basic profesor2
+ls -l usuarios_basic
+sudo gedit grupos_basic
+cd /var/www/html/
+sudo mkdir profesor
+cd ./profesor/
+sudo gedit index.html
+sudo gedit 000-default.conf
+<Directory /var/www/html/profesor/>
+	AuthType Basic
+	AuthName "Bienvenido al sitio de los profes"
+	AuthBasicProvider file 
+	AuthUserFile "/etc/apache2/usuarios_basic"
+	AuthGroupFile "/etc/apache2/grupos_basic"
+	Require user profesor1 o Require group profesores
+<Directory>
+sudo service apache2 restart 
+sudo htdigest -c /etc/apache2/usuarios_digest_xestion_admin1
+cd /var/www/html/
+sudo mkdir administradores
+cd ./administradores/
+sudo gedit administradores.html
+cd /etc/apache2/
+ls -l
+cd ./sites-available/
+ls -l
+sudo gedit 000-default-conf
+<Directory /var/www/html/administradores/>
+	AuthType Digest
+	AuthName "xestion" (dominio)
+	AuthBasicProvider file 
+	AuthUserFile "/etc/apache2/usuarios_digest"
+	Require user admin1 admin2
+<Directory>
+sudo service apache2 restart

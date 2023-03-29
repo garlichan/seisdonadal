@@ -1,6 +1,6 @@
 <?php
-include('database.php');
 session_start();
+include('database.php');
 
 //registro usuario
 if (isset($_POST['register'])) {
@@ -64,13 +64,13 @@ and open the template in the editor.
     <meta charset="UTF-8">
     <link rel="icon" href="/imagenes/logo/logo002.png">
     <title>CEIP Plurilingüe Seis do Nadal</title>
-    <link href="/styles/login.css" rel="stylesheet" type="text/css">
+    <link href="./styles/login.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
     <header class="header">
         <div class="logo">
-            <a href="index.php"><img src="imagenes/logo/logo001.png" /></a>
+            <a href="index.php"><img src="./imagenes/logo/logo001.png" /></a>
         </div>
         <h3>CEIP Plurilingüe Seis do Nadal</h3>
         <nav class="enlaces">

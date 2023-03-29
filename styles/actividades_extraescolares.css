@@ -62,32 +62,32 @@ input{
     background-size: cover;
 }
 #ballet{
-    background-image: url("/imagenes/actividades/ballet.jpg");
+    background-image: url("../imagenes/actividades/ballet.jpg");
 }
 #gimnasia_ritmica{
-    background-image: url("/imagenes/actividades/gimnasia_ritmica.jpg");
+    background-image: url("../imagenes/actividades/gimnasia_ritmica.jpg");
 }
 #baile_moderno{
-    background-image: url("/imagenes/actividades/baile_moderno.jpg");
+    background-image: url("../imagenes/actividades/baile_moderno.jpg");
 }
 #baloncesto{
-    background-image: url("/imagenes/actividades/baloncesto.jpg");
+    background-image: url("../imagenes/actividades/baloncesto.jpg");
 }
 #balonmano{
-    background-image: url("/imagenes/actividades/balonmano.jpg");
+    background-image: url("../imagenes/actividades/balonmano.jpg");
 }
 #kung_fu{
-    background-image: url("/imagenes/actividades/kungfu.jpg");
+    background-image: url("../imagenes/actividades/kungfu.jpg");
 }
 #teatro{
-    background-image: url("/imagenes/actividades/teatro.jpg");
+    background-image: url("../imagenes/actividades/teatro.jpg");
 }
 #pintura_creativa{
-    background-image: url("/imagenes/actividades/pintura_creativa.jpg");
+    background-image: url("../imagenes/actividades/pintura_creativa.jpg");
 }
 #comic{
-    background-image: url("/imagenes/actividades/comic.jpg");
+    background-image: url("../imagenes/actividades/comic.jpg");
 }
 #ingles{
-    background-image: url("/imagenes/actividades/ingles.jpg");
+    background-image: url("../imagenes/actividades/ingles.jpg");
 }

@@ -51,7 +51,7 @@ header h3 {
     height: 81%;
     position: absolute;
     background-size: cover;
-    background-image: url("/imagenes/colegio.jpg");
+    background-image: url("../imagenes/colegio.jpg");
 }
 
 .contacto{
